@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>account details</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+    <style>
+     .demo{
+        border:1px solid black;
+        border-radius: 10px;
+         width:400px;
+          padding:20px;
+          margin-top:100px;
+     }
+    </style>
+    <body>
+        <center><div class="alert" style="display:none; margin-top:20px; border:1px solid black; border-radius: 10px; width:250px; padding:20px;" id="popup">
+            <button class="btn btn-warning" onclick="deb()">Debit</button>
+            <button class="btn btn-warning" onclick="cre()">Credit</button>
+        </div></center>
+        <center><div class="demo">
+        <h1>user details</h1>
+    <h4>ACCOUNTHOLDER:ch.likhitha</h4>
+    <h4>ACCOUNTNO:651238543964</h4>
+    <h4>ACCOUNTBALANCE:90000</h4>
+    <h4>BRANCHNAME:SBI</h4>
+    <h4>IFSCCODE:56773</h4>
+    <a href="user transaction.html"><button class="btn btn-info">Home</button></a>
+    <button class="btn btn-info" onclick="trans()">Transaction</button>
+    </div></center>
+    <script>
+        function trans(){
+            document.getElementById("popup").style.display="block";
+        }  
+        function deb(){
+                let pin=+prompt("enter your pin");
+                if(pin===5678){
+                    location.href="debit amount.html"
+                }
+                else{
+            alert("entervalidpassword")
+            }
+            }
+            function cre(){
+                 let pin=+prompt("enter your pin");
+                 if(pin===5678){
+                    location.href="credit.html"  
+                 }
+                 else{
+             alert("entervalidpassword")
+             }
+            }
+    </script>
+    </body>
+</html>

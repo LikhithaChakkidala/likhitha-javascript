@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>user a/c details</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css" integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+        .row{
+        height:200px;
+        }
+        </style>
+    </head>
+    <body>
+        <center><h1 style="margin-top:50px;">SBI BANK</h1></center>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-sm-4">
+        <center><div style="margin-top:90px; border:1px solid black; border-radius: 10px; width:250px; padding:20px;">
+            <h3>Account details</h3>
+            <button onclick="sub()"style="width:80px;" class="btn btn-info">click</button>
+        </div></center></div>
+            <div class="col-sm-4">
+        <center><div style="margin-top:90px; border:1px solid black; border-radius: 10px; width:250px; padding:20px;">
+            <h3>Debit Amount</h3>
+            <button onclick="deb()" style="width:80px;"class="btn btn-info"><a href="debit amount.html">click</a></button>
+        </div></center></div>
+            <div class="col-sm-4">
+        <center><div style="margin-top:90px; border:1px solid black; border-radius: 10px; width:250px; padding:20px;">
+            <h3>Credit Amount</h3>
+            <button onclick="cre()"style="width:80px;"class="btn btn-info"><a href="credit.html">click</a></button>
+        </div></center></div>
+        </div>
+
+        <script>
+            function sub(){
+                let pin=+prompt("enter your pin");
+                if(pin===1234){
+                    location.href="user details.html"
+                 }
+            else if(pin==""){
+                alert("blank user name")
+            }
+          else{
+            alert("entervalidpassword")
+            }
+        }
+        </script>
+    </body>
+</html>
